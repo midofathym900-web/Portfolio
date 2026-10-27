@@ -4,11 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Mohammed Safan — Biomedical Engineer portfolio.">
-  <meta http-equiv="refresh" content="0; url=./Mohammed_Safan_Portfolio.html">
+  <meta http-equiv="refresh" content="0; url=./Mohammed_Safan_Portfolio.html?v=portrait-20261028">
   <title>Mohammed Safan | Biomedical Engineer</title>
-  <script>window.location.replace('./Mohammed_Safan_Portfolio.html' + window.location.search + window.location.hash);</script>
+  <script>
+    const portfolioUrl = new URL('./Mohammed_Safan_Portfolio.html', window.location.href);
+    portfolioUrl.search = window.location.search;
+    portfolioUrl.searchParams.set('v', 'portrait-20261028');
+    portfolioUrl.hash = window.location.hash;
+    window.location.replace(portfolioUrl);
+  </script>
 </head>
 <body>
-  <p><a href="./Mohammed_Safan_Portfolio.html">Open Mohammed Safan's portfolio</a></p>
+  <p><a href="./Mohammed_Safan_Portfolio.html?v=portrait-20261028">Open Mohammed Safan's portfolio</a></p>
 </body>
 </html>
